@@ -1,18 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>test</title>
+  <title>eso</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <!-- style starts here  -->
+  <style>
+  h1 {font-size: 14px;
+  }
+  
+  body {background-color: #E8F3FD;
+  }
+  
+  .box0 {position: absolute;
+  top: 5px; left: 5px;
+  z-index:-10;
+  }
+  
+  .box1 {position: relative;
+  top: 50px; left: 40px;
+  }
+  
+  .box2 {position: absolute;
+  top: 180px; left: 120px;
+  z-index:10;
+  }
+  
+  ul {list-style:none;
+  max-height:100px;
+  margin:5px;
+  overflow:auto;
+  }
+  </style>
 </head>
-
+<!-- body starts here -->
 <body>
-  <div class="window" style="margin: 32px; width: 250px">
+ <!-- box 0 -->
+  
+  <div class="window box0" style="margin: 32px; width: 300px;" >
+  
     <div class="title-bar">
       <div class="title-bar-text">
-        this is a test message
+        WARNING!!!
+      </div>
+	  
+	  <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Restore"></button>
+        <button aria-label="Close"></button>
       </div>
     </div>
+	<!-- window body -->
+    <div class="window-body">
+	  <p>A virus has been detected!!!!!</p>
+    </div>
+  </div>
+  <!-- box1 -->
+  <div class="window box1" style="margin: 32px; width: 300px;" >
+  
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Notes
+      </div>
+	  
+	  <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Restore"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+	<!-- window body -->
+    <div class="window-body">
+	<!-- textbox -->
+	
+      <ul class="tree-view" >
+	    <h1>Why I am so cool</h1>
+	    <p>I'm just a chill guy man...</p>
+		
+		<!-- checkboxes -->
+		<div class="field-row">
+           <input checked type="checkbox" id="example2">
+           <label for="example2">I agree with you completely</label>
+        </div>
+        <div class="field-row">
+           <input disabled type="checkbox" id="example3">
+           <label for="example3">I disagree</label>
+        </div>
+		
+		<p>Thank you for agreeing with me kind internet user. I knew I could count on you.</p>
+	  </ul>
+    </div>
+  </div>
+  
+  <!-- box 2 -->
+  
+  <div class="window box2" style="margin: 32px; width: 300px" >
+  
+    <div class="title-bar">
+      <div class="title-bar-text">
+        SYSTEM MESSAGE
+      </div>
+	  
+	  <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Restore"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+	<!-- window body -->
+    <div class="window-body">
+	  <p>A virus has been detected!!! TAke action immediately!!!</p>
+    </div>
+  </div>
+</body>
+</html>
     <div class="window-body">
       <p>Hello, world!</p>
     </div>
