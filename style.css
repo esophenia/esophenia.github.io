@@ -6,12 +6,12 @@
 
 :root {
   /* Color */
-  --text-color: #0a0a0a;
-  --surface: #D8E3FF;
+  --text-color: #3859C2;
+  --surface: #F5E3FF;
   --button-highlight: #ffffff;
   --button-face: #F8EBFF;
   --button-shadow: #BAC7FA;
-  --window-frame: #0a0a0a;
+  --window-frame: #3859C2;
   --dialog-blue: #92ADFF;
   --dialog-blue-light: #F5E3FF;
   --dialog-gray: #808080;
