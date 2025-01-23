@@ -31,6 +31,13 @@
   margin:5px;
   overflow:auto;
   }
+  
+  .notes{position: relative;
+  float: right;
+  top:0;
+  z-index: 9;
+  }
+  
   </style>
 </head>
 <!-- body starts here -->
@@ -46,7 +53,6 @@
 	  
 	  <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
-        <button aria-label="Restore"></button>
         <button aria-label="Close"></button>
       </div>
     </div>
@@ -65,7 +71,7 @@
 	  
 	  <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
-        <button aria-label="Restore"></button>
+        <button aria-label="Maximize"></button>
         <button aria-label="Close"></button>
       </div>
     </div>
@@ -103,15 +109,37 @@
 	  
 	  <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
-        <button aria-label="Restore"></button>
         <button aria-label="Close"></button>
       </div>
     </div>
 	<!-- window body -->
     <div class="window-body">
-	  <p>A virus has been detected!!! Take action immediately!!!</p>
+	  <p>A virus has been detected!!! TAke action immediately!!!</p>
+    </div>
+  </div>
+  
+   <!-- notes window -->
+  <div class="window notes" style="margin: 32px; width: 225px;" >
+  
+    <div class="title-bar" style="width: 220px;">
+      <div class="title-bar-text">
+        Notepad.exe
+      </div>
+	  
+	  <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+	<!-- window body -->
+    <div class="window-body">
+	<!-- text box -->
+	  <div class="field-row-stacked" style="width: 200px; overflow: auto;">
+        <label for="text20">Make some notes!</label>
+        <textarea id="text20" rows="10"></textarea>
+      </div>
     </div>
   </div>
 </body>
 </html>
-
